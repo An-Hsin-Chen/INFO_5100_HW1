@@ -1,0 +1,147 @@
+<html><body>
+    <p id="p1">
+        (a) avocado is not a datatype in JavaScript.<br/>
+
+        (b) array is not a datatype in JavaScript. <br/>
+        <script>
+            let food = ["ginger", "viniger", "salt", "oil"];
+            console.log(food);
+            console.log("The datatype is " + typeof(food));
+        </script>
+        (c) boolean is a datatype in JavaScript. <br/>
+        <script>
+            console.log(4===5);
+            console.log("The datatype is " + typeof(4==5));
+        </script>
+        (d) object is a datatype in JavaScript. <br/>
+        <script>
+            class student{
+                constructor(id, name){
+                    this.id = id;
+                    this.name = name;
+                }
+            }
+            let newStudent = new student(1, "Jim")
+            console.log(newStudent);
+            console.log("The datatype is " + typeof(newStudent));
+        </script>
+
+        (e) Unicode is not a datatype in JavaScript. <br/>
+        <script>
+            console.log("\uD83D\uDC0D");
+            console.log("The datatype is " + typeof("\uD83D\uDC0D"));
+        </script>
+
+        (f) string is a datatype in JavaScript.<br/>
+        <script>
+            console.log("JavaScript");
+            console.log("The datatype is " + typeof("JavaScript"));
+        </script>
+
+        (g) function is not a datatype in JavaScript but when using datatype() to check it, it return function. 
+         This is because a function is an object in JavaScript. <br/>
+        <script>
+            console.log(Math.abs(-5));
+            console.log("The datatype is " + typeof(Math.abs));
+        </script>
+
+        (h) int is not a datatype in JavaScript. <br/>
+        <script>
+            console.log(10);
+            console.log("The datatype is " + typeof(10));
+        </script>
+
+        (i) number is a datatype in JavaScript. <br/>
+        <script>
+            console.log(10.333);
+            console.log("The datatype is " + typeof(10.333));
+        </script>
+
+        (j) class is not a datatype in JavaScript. <br/>
+        <script>
+
+            console.log(student);
+            console.log("The datatype is " + typeof(student));
+        </script>
+
+        (k) regex is not a datatype in JavaScript. <br/>
+        <script>
+            let re = new RegExp("Hello world");
+            console.log(re);
+            console.log("The datatype is " + typeof(re));
+        </script>
+
+        (l) char is not a datatype in JavaScript. <br/>
+        <script>
+            let y = "A"
+            console.log(y);
+            console.log("The datatype is " + typeof(y));
+        </script>
+
+        (m) undefined is a datatype in JavaScript. <br/>
+        <script>
+            let x;
+            console.log(x);
+            console.log("The datatype is " + typeof(x));
+        </script>
+
+        (n) pointer is not a datatype in JavaScript. <br/>
+        There is no pointer in JavaScript. </br>
+
+
+        (o) NaN("not a number") is not a datatype in JavaScript. <br/>
+        <script>
+            console.log(Math.sqrt(-1));
+            console.log("The datatype is " + typeof(Math.sqrt(-1)));
+        </script>
+    </p>    
+    <p id="p2">
+        In JavaScript, the datatype of null is an object instead of null. </br>
+        This is considered to be bug in JavaScript. 
+        <script>
+            let foo = null;
+            console.log(foo);
+            console.log(typeof(foo));
+        </script>
+    </p>
+    <p id="p3">
+        Type coercion refer to the process of implict conversion of value from one datatype to another. </br>
+        a = "10" + 2; returns 102 as string </br>
+        b =  10 - "2"; returns 8 as number </br>
+        <script>
+        let a = "10" + 2;
+        let b =  10 - "2";
+            console.log(a);
+            console.log(typeof(a));
+            console.log(b);
+            console.log(typeof(b));
+        </script>
+    </p>
+    <p id="p4">
+        <script>
+            function fib(n){
+                if (n<0){
+                    return undefined
+                }
+                else if (n===0){
+                    return 0
+                }
+                else if (n ===1 || n===2){
+                    return 1
+                }else{
+                    return fib(n-1) + fib(n-2)
+                }
+            };
+            console.log( fib(-2) );
+            console.log( fib(0) );
+            console.log( fib(1) );
+            console.log( fib(4) );
+            console.log( fib(7) );
+            console.log( fib(9) );
+        </script>
+    </p>
+    <p id="p5">
+        late and unreadable work will receive an 0 without exception. 
+        To avoid receiving an 0, students should re-download their own submissions on CMS to check them.
+    </p>
+   </body></html>
